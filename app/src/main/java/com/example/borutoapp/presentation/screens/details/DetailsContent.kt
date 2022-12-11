@@ -32,7 +32,6 @@ import com.example.borutoapp.presentation.components.OrderedList
 import com.example.borutoapp.ui.theme.*
 import com.example.borutoapp.util.Constants.ABOUT_TEXT_MAX_LINES
 import com.example.borutoapp.util.Constants.BASE_URL
-import com.example.borutoapp.util.Constants.MIN_BACKGROUND_IMAGE_HEIGHT
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 @ExperimentalCoilApi
@@ -226,7 +225,7 @@ fun BackgroundContent(
         AsyncImage(
             modifier = Modifier
                 .fillMaxWidth()
-                .fillMaxHeight(fraction = imageFraction + MIN_BACKGROUND_IMAGE_HEIGHT)
+                .fillMaxHeight(fraction = imageFraction + 0.4f)
                 .align(Alignment.TopStart),
             model = ImageRequest.Builder(LocalContext.current)
                 .data(data = imageUrl)
@@ -289,16 +288,3 @@ fun BottomSheetContentPreview() {
         )
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class SplashViewModel @Inject constructor(
     private val useCases: UseCases
-): ViewModel() {
+) : ViewModel() {
 
     private val _onBoardingCompleted = MutableStateFlow(false)
     val onBoardingCompleted: StateFlow<Boolean> = _onBoardingCompleted
@@ -25,5 +25,4 @@ class SplashViewModel @Inject constructor(
                 useCases.readOnBoardingUseCase().stateIn(viewModelScope).value
         }
     }
-
 }

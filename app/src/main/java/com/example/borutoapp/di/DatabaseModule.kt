@@ -2,7 +2,6 @@ package com.example.borutoapp.di
 
 import android.content.Context
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.example.borutoapp.data.local.BorutoDatabase
 import com.example.borutoapp.data.repository.LocalDataSourceImpl
 import com.example.borutoapp.domain.repository.LocalDataSource
@@ -39,5 +38,4 @@ object DatabaseModule {
             borutoDatabase = database
         )
     }
-
 }

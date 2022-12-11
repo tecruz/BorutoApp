@@ -1,4 +1,4 @@
-package com.example.borutoapp.domain.use_cases.read_onboarding
+package com.example.borutoapp.domain.usecases.readonboarding
 
 import com.example.borutoapp.data.repository.Repository
 import kotlinx.coroutines.flow.Flow

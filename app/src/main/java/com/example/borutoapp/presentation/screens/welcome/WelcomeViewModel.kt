@@ -11,12 +11,11 @@ import javax.inject.Inject
 @HiltViewModel
 class WelcomeViewModel @Inject constructor(
     private val useCases: UseCases
-): ViewModel() {
+) : ViewModel() {
 
     fun saveOnBoardingState(completed: Boolean) {
         viewModelScope.launch(Dispatchers.IO) {
             useCases.saveOnBoardingUseCase(completed = completed)
         }
     }
-
 }

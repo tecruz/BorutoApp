@@ -6,6 +6,8 @@ import com.example.borutoapp.data.remote.BorutoApi
 import com.example.borutoapp.data.repository.RemoteDataSourceImpl
 import com.example.borutoapp.domain.repository.RemoteDataSource
 import com.example.borutoapp.util.Constants.BASE_URL
+import com.example.borutoapp.util.Constants.CONNECTION_TIMEOUT
+import com.example.borutoapp.util.Constants.READ_TIMEOUT
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides
@@ -13,7 +15,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
-import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -30,8 +31,8 @@ object NetworkModule {
     @Singleton
     fun provideHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
-            .readTimeout(15, TimeUnit.SECONDS)
-            .connectTimeout(15, TimeUnit.SECONDS)
+            .readTimeout(READ_TIMEOUT, TimeUnit.SECONDS)
+            .connectTimeout(CONNECTION_TIMEOUT, TimeUnit.SECONDS)
             .build()
     }
 
@@ -63,5 +64,4 @@ object NetworkModule {
             borutoDatabase = borutoDatabase
         )
     }
-
 }

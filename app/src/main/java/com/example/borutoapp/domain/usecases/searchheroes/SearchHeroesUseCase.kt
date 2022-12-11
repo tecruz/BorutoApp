@@ -1,14 +1,14 @@
-package com.example.borutoapp.domain.use_cases.get_all_heroes
+package com.example.borutoapp.domain.usecases.searchheroes
 
 import androidx.paging.PagingData
 import com.example.borutoapp.data.repository.Repository
 import com.example.borutoapp.domain.model.Hero
 import kotlinx.coroutines.flow.Flow
 
-class GetAllHeroesUseCase(
+class SearchHeroesUseCase(
     private val repository: Repository
 ) {
-    operator fun invoke(): Flow<PagingData<Hero>> {
-        return repository.getAllHeroes()
+    operator fun invoke(query: String): Flow<PagingData<Hero>> {
+        return repository.searchHeroes(query = query)
     }
 }

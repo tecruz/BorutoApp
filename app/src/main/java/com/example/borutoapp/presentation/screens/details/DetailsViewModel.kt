@@ -46,7 +46,6 @@ class DetailsViewModel @Inject constructor(
     fun setColorPalette(colors: Map<String, String>) {
         _colorPalette.value = colors
     }
-
 }
 
 sealed class UiEvent {

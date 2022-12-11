@@ -1,4 +1,4 @@
-package com.example.borutoapp.domain.use_cases.save_onboarding
+package com.example.borutoapp.domain.usecases.saveonboarding
 
 import com.example.borutoapp.data.repository.Repository
 

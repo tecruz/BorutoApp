@@ -4,7 +4,7 @@ import com.example.borutoapp.data.local.BorutoDatabase
 import com.example.borutoapp.domain.model.Hero
 import com.example.borutoapp.domain.repository.LocalDataSource
 
-class LocalDataSourceImpl(borutoDatabase: BorutoDatabase): LocalDataSource {
+class LocalDataSourceImpl(borutoDatabase: BorutoDatabase) : LocalDataSource {
 
     private val heroDao = borutoDatabase.heroDao()
 

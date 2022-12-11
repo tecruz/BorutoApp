@@ -29,6 +29,4 @@ abstract class BorutoDatabase : RoomDatabase() {
 
     abstract fun heroDao(): HeroDao
     abstract fun heroRemoteKeysDao(): HeroRemoteKeysDao
-
-
 }

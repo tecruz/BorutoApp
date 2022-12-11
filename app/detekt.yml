@@ -124,7 +124,7 @@ complexity:
     threshold: 600
   LongMethod:
     active: true
-    threshold: 60
+    threshold: 99
   LongParameterList:
     active: true
     functionThreshold: 6
@@ -557,7 +557,7 @@ style:
     active: true
     maxJumpCount: 1
   MagicNumber:
-    active: true
+    active: false
     excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/jsTest/**', '**/iosTest/**', '**/*.kts']
     ignoreNumbers:
       - '-1'
@@ -572,7 +572,7 @@ style:
     ignoreAnnotation: false
     ignoreNamedArgument: true
     ignoreEnums: false
-    ignoreRanges: false
+    ignoreRanges: true
     ignoreExtensionFunctions: true
   MandatoryBracesIfStatements:
     active: false
@@ -582,7 +582,7 @@ style:
     active: false
     maxChainedCalls: 5
   MaxLineLength:
-    active: true
+    active: false
     maxLineLength: 140
     excludePackageStatements: true
     excludeImportStatements: true
@@ -714,7 +714,7 @@ formatting:
   android: false
   autoCorrect: true
   AnnotationOnSeparateLine:
-    active: true
+    active: false
     autoCorrect: true
   AnnotationSpacing:
     active: true
@@ -781,7 +781,7 @@ formatting:
     autoCorrect: true
     indentSize: 4
   MaximumLineLength:
-    active: true
+    active: false
     maxLineLength: 140
     ignoreBackTickedIdentifier: false
   ModifierListSpacing:
@@ -888,7 +888,7 @@ formatting:
     active: false
     autoCorrect: true
   StringTemplate:
-    active: true
+    active: false
     autoCorrect: true
   TrailingComma:
     active: true

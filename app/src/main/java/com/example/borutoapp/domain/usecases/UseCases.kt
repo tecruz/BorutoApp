@@ -1,10 +1,10 @@
 package com.example.borutoapp.domain.usecases
 
-import com.example.borutoapp.domain.use_cases.get_all_heroes.GetAllHeroesUseCase
-import com.example.borutoapp.domain.use_cases.get_selected_hero.GetSelectedHeroUseCase
-import com.example.borutoapp.domain.use_cases.read_onboarding.ReadOnBoardingUseCase
-import com.example.borutoapp.domain.use_cases.save_onboarding.SaveOnBoardingUseCase
-import com.example.borutoapp.domain.usecases.search_heroes.SearchHeroesUseCase
+import com.example.borutoapp.domain.usecases.getallheroes.GetAllHeroesUseCase
+import com.example.borutoapp.domain.usecases.getselectedhero.GetSelectedHeroUseCase
+import com.example.borutoapp.domain.usecases.readonboarding.ReadOnBoardingUseCase
+import com.example.borutoapp.domain.usecases.saveonboarding.SaveOnBoardingUseCase
+import com.example.borutoapp.domain.usecases.searchheroes.SearchHeroesUseCase
 
 data class UseCases(
     val saveOnBoardingUseCase: SaveOnBoardingUseCase,

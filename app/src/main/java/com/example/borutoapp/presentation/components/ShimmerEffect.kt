@@ -20,8 +20,8 @@ fun ShimmerEffect() {
     LazyColumn(
         contentPadding = PaddingValues(all = SMALL_PADDING),
         verticalArrangement = Arrangement.spacedBy(SMALL_PADDING)
-    ){
-        items(count = 2){
+    ) {
+        items(count = 2) {
             AnimatedShimmerItem()
         }
     }
@@ -39,7 +39,8 @@ fun AnimatedShimmerItem() {
                 easing = FastOutLinearInEasing
             ),
             repeatMode = RepeatMode.Reverse
-        ))
+        )
+    )
     ShimmerItem(alpha = alphaAnim)
 }
 
@@ -81,7 +82,7 @@ fun ShimmerItem(alpha: Float) {
                 Spacer(modifier = Modifier.padding(all = EXTRA_SMALL_PADDING))
             }
             Row(modifier = Modifier.fillMaxWidth()) {
-                repeat(5){
+                repeat(5) {
                     Surface(
                         modifier = Modifier
                             .alpha(alpha = alpha)

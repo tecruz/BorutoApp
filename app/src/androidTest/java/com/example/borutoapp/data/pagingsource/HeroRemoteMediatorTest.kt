@@ -1,4 +1,4 @@
-package com.example.borutoapp.data.paging_source
+package com.example.borutoapp.data.pagingsource
 
 import androidx.paging.*
 import androidx.paging.RemoteMediator.*

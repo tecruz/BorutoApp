@@ -1,4 +1,4 @@
-package com.example.borutoapp.data.paging_source
+package com.example.borutoapp.data.pagingsource
 
 import androidx.paging.PagingSource.LoadParams
 import androidx.paging.PagingSource.LoadResult
@@ -139,17 +139,4 @@ class SearchHeroesSourceTest {
             assertTrue { result.isEmpty() }
             assertTrue { loadResult is LoadResult.Page }
         }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

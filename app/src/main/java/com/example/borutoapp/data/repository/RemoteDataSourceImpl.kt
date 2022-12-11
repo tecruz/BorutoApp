@@ -5,8 +5,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.example.borutoapp.data.local.BorutoDatabase
-import com.example.borutoapp.data.paging_source.HeroRemoteMediator
-import com.example.borutoapp.data.paging_source.SearchHeroesSource
+import com.example.borutoapp.data.pagingsource.HeroRemoteMediator
+import com.example.borutoapp.data.pagingsource.SearchHeroesSource
 import com.example.borutoapp.data.remote.BorutoApi
 import com.example.borutoapp.domain.model.Hero
 import com.example.borutoapp.domain.repository.RemoteDataSource

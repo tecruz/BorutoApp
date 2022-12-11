@@ -17,5 +17,4 @@ interface HeroRemoteKeysDao {
 
     @Query("DELETE FROM hero_remote_keys_table")
     suspend fun deleteAllRemoteKeys()
-
 }

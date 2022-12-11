@@ -1,4 +1,4 @@
-package com.example.borutoapp.domain.use_cases.get_selected_hero
+package com.example.borutoapp.domain.usecases.getselectedhero
 
 import com.example.borutoapp.data.repository.Repository
 import com.example.borutoapp.domain.model.Hero

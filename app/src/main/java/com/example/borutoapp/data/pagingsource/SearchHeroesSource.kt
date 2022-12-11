@@ -1,4 +1,4 @@
-package com.example.borutoapp.data.paging_source
+package com.example.borutoapp.data.pagingsource
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState

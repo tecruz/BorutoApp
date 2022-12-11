@@ -1,4 +1,4 @@
-package com.example.borutoapp.data.paging_source
+package com.example.borutoapp.data.pagingsource
 
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
@@ -111,11 +111,4 @@ class HeroRemoteMediator(
                 heroRemoteKeysDao.getRemoteKeys(heroId = hero.id)
             }
     }
-
-//    private fun parseMillis(millis: Long): String {
-//        val date = Date(millis)
-//        val format = SimpleDateFormat("yyyy.MM.dd HH:mm", Locale.ROOT)
-//        return format.format(date)
-//    }
-
 }
