@@ -1,4 +1,4 @@
-package com.example.borutoapp.screens.splash
+package com.example.borutoapp.presentation.screens.splash
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

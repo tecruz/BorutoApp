@@ -14,6 +14,7 @@ import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit
@@ -41,7 +42,7 @@ object NetworkModule {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(okHttpClient)
-            .addConverterFactory(Json.asConverterFactory(MediaType.parse(contentType)!!))
+            .addConverterFactory(Json.asConverterFactory(contentType.toMediaTypeOrNull()!!))
             .build()
     }
 

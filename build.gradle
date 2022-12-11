@@ -12,4 +12,12 @@ plugins {
     id 'com.google.dagger.hilt.android' version "2.44" apply false
     id 'org.jetbrains.kotlin.jvm' version '1.7.21'
     id 'org.jetbrains.kotlin.plugin.serialization' version '1.7.21'
+    id 'com.vanniktech.android.junit.jacoco' version '0.16.0'
+}
+
+allprojects {
+    junitJacoco {
+        jacocoVersion = '0.8.8'
+        includeNoLocationClasses = false
+    }
 }
